@@ -3,7 +3,7 @@ const data = require('../lib/skoleruta-data')
 const isFuture = line => line.date >= line.today
 
 module.exports = async (request, response) => {
-  const { query } = await parse(request.url)
+  const { query } = await parse(request.url, true)
   const date = query && query.date ? new Date(query.date) : new Date()
   const skoleruta = data
     .map(line => Object.assign({}, line, { today: date }))

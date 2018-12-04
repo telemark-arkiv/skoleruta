@@ -2,12 +2,10 @@
   "name": "skoleruta",
   "version": "1.0.0",
   "description": "How to make skoleruta better",
-  "main": "index.js",
-  "directories": {
-    "lib": "lib"
-  },
+  "main": "api/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "micro-dev"
   },
   "repository": {
     "type": "git",
@@ -19,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/telemark/skoleruta/issues"
   },
-  "homepage": "https://github.com/telemark/skoleruta#readme"
+  "homepage": "https://github.com/telemark/skoleruta#readme",
+  "devDependencies": {
+    "dotenv-safe": "6.1.0",
+    "micro": "9.3.3",
+    "micro-dev": "3.0.0"
+  }
 }
