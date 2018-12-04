@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "name": "skoleruta",
+  "builds": [
+    { "src": "/README.md", "use": "@now/md"},
+    { "src": "/api/*.js", "use": "@now/node"}
+  ],
+  "routes": [
+    { "src": "/", "dest": "/README.html"},
+    { "src": "/api/(.*)", "dest": "/api/index.js"}
+  ]
+}

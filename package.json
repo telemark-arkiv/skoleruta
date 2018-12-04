@@ -1,0 +1,23 @@
+{
+  "name": "skoleruta",
+  "version": "1.0.0",
+  "description": "How to make skoleruta better",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/telemark/skoleruta.git"
+  },
+  "keywords": [],
+  "author": "Geir Gåsodden <geir.gasodden@pythonia.no> (https://github.com/zrrrzzt)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/telemark/skoleruta/issues"
+  },
+  "homepage": "https://github.com/telemark/skoleruta#readme"
+}
