@@ -1,5 +1,7 @@
 const { parse } = require('url')
+const { send } = require('micro')
 const data = require('../lib/skoleruta-data')
+const generateSkoleruta = require('../lib/generate-skoleruta')
 const isFuture = line => line.date >= line.today
 
 module.exports = async (request, response) => {
@@ -9,5 +11,5 @@ module.exports = async (request, response) => {
     .map(line => Object.assign({}, line, { today: date }))
     .map(line => Object.assign({}, line, { date: new Date(line.date) }))
     .filter(isFuture)
-  response.end(JSON.stringify(skoleruta))
+  send(response, 200, generateSkoleruta(skoleruta))
 }
